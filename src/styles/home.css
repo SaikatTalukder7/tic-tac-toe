@@ -1,0 +1,30 @@
+/* ===== Home screen title ===== */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.hero-pieces {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.hero .piece { --p: 2.7rem; }
+
+.hero-title {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+/* Same title size, casing and spacing on every board.
+   Themes may change colours and styles, never the text size. */
+.app[data-theme] h1 {
+  text-transform: none;
+  letter-spacing: 0.02em;
+}

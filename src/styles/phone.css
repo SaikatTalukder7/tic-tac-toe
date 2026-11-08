@@ -1,0 +1,124 @@
+/* ===== iPhone 15 Pro frame ===== */
+
+/* titanium colour follows the theme */
+.app[data-theme='noir'] {
+  --card: #151518;
+  --frame: linear-gradient(145deg, #5a5a60, #1b1b1e 42%, #3d3d42 72%, #131315);
+  --frame-btn: #2b2b2f;
+}
+.app[data-theme='wood'] {
+  --frame: linear-gradient(145deg, #d3cdc1, #8f8a80 42%, #b9b3a8 72%, #6c685f);
+  --frame-btn: #9c968b;
+}
+.app[data-theme='pop'] {
+  --frame: linear-gradient(145deg, #8392ab, #3e4a60 42%, #6a788f 72%, #2a3347);
+  --frame-btn: #4d5a72;
+}
+
+.app { padding: 0.5rem 0; }
+
+.phone {
+  position: relative;
+  display: flex;
+  width: 23.4rem;
+  height: min(44.5rem, calc(100svh - 1rem));
+  padding: 0.4rem;
+  border-radius: 3.4rem;
+  background: var(--frame);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.28),
+    inset 0 0 0 2px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 32px 70px rgba(0, 0, 0, 0.5);
+}
+
+/* left side: action button + volume up + volume down */
+.phone::before {
+  content: '';
+  position: absolute;
+  left: -0.2rem;
+  top: 6.5rem;
+  width: 0.24rem;
+  height: 8.4rem;
+  border-radius: 0.2rem 0 0 0.2rem;
+  background: linear-gradient(
+    var(--frame-btn) 0 1.3rem,
+    transparent 1.3rem 2.2rem,
+    var(--frame-btn) 2.2rem 4.9rem,
+    transparent 4.9rem 5.8rem,
+    var(--frame-btn) 5.8rem 8.4rem
+  );
+}
+/* right side: power button */
+.phone::after {
+  content: '';
+  position: absolute;
+  right: -0.2rem;
+  top: 10rem;
+  width: 0.24rem;
+  height: 4.2rem;
+  border-radius: 0 0.2rem 0.2rem 0;
+  background: var(--frame-btn);
+}
+
+.island {
+  position: absolute;
+  top: 1.3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5.8rem;
+  height: 1.65rem;
+  border-radius: 1rem;
+  background: #000;
+  z-index: 4;
+  pointer-events: none;
+}
+.home-bar {
+  position: absolute;
+  bottom: 1.15rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7.2rem;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: var(--text);
+  opacity: 0.55;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* the card is now the phone screen */
+.card {
+  flex: 1;
+  width: auto;
+  min-height: 0;
+  padding: 2.8rem 1.4rem 1.8rem;
+  border: 0.3rem solid #000;
+  border-radius: 3rem;
+  box-shadow: none;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.card::-webkit-scrollbar { display: none; }
+
+/* on a real phone: no frame, the game fills the screen */
+@media (max-width: 480px) {
+  .app { padding: 0; }
+  .phone {
+    width: 100%;
+    height: 100svh;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+  }
+  .phone::before,
+  .phone::after,
+  .island,
+  .home-bar { display: none; }
+  .card {
+    border: none;
+    border-radius: 0;
+    padding: max(1.2rem, env(safe-area-inset-top)) 1.2rem max(1.2rem, env(safe-area-inset-bottom));
+  }
+}

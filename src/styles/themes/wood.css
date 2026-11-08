@@ -1,0 +1,32 @@
+/* WOOD: wooden board, red X, black O */
+.app[data-theme='wood'] {
+  --page:
+    repeating-linear-gradient(92deg, rgba(0, 0, 0, 0.07) 0 2px, transparent 2px 11px),
+    repeating-linear-gradient(88deg, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px 23px),
+    linear-gradient(135deg, #9a6a45, #6b4129);
+  --card: linear-gradient(145deg, #c9a273, #a87f52);
+  --card-border: rgba(60, 34, 14, 0.35);
+  --card-shadow: 0 24px 50px rgba(0, 0, 0, 0.45);
+  --card-radius: 1.4rem;
+  --text: #2b190c;
+  --muted: #6a4a2f;
+  --surface: #e3c79f;
+  --surface-hover: #ecd3ae;
+  --border: rgba(60, 34, 14, 0.35);
+  --danger: #a3261f;
+  --x-ui: #a8433c;  --on-x: #fff1e6;
+  --o-ui: #26262a;  --on-o: #f4e9dc;
+  --tie-ui: #7a5a3a; --on-tie: #fff1e0;
+  --win: #fff0c8;
+  --x-fill: linear-gradient(160deg, #bb584f, #8c342d);
+  --o-fill: linear-gradient(160deg, #3b3b41, #17171a);
+  --piece-shadow: drop-shadow(0 3px 2px rgba(0, 0, 0, 0.5));
+  --x-thick: 0.26; --x-cap: 0.12rem; --o-ring: 0.22;
+  --board-bg: #b88e5d;
+  --board-edge: inset 0 0 0 3px #d6b384, 0 10px 18px rgba(0, 0, 0, 0.35);
+  --board-pad: 0.7rem; --board-gap: 0.5rem; --board-radius: 1rem;
+  --cell-bg: repeating-linear-gradient(95deg, rgba(0, 0, 0, 0.05) 0 1px, transparent 1px 7px), #a98a62;
+  --cell-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(0, 0, 0, 0.12);
+  --cell-radius: 0.5rem;
+  --tray-bg: rgba(60, 34, 14, 0.22);
+}

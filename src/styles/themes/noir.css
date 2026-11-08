@@ -1,0 +1,29 @@
+/* NOIR: black board, charcoal X, red O */
+.app[data-theme='noir'] {
+  --page: radial-gradient(ellipse at 50% 15%, #2d2d32 0%, #101012 70%);
+  --card: rgba(22, 22, 25, 0.92);
+  --card-border: rgba(255, 255, 255, 0.07);
+  --card-shadow: 0 30px 70px rgba(0, 0, 0, 0.65);
+  --card-radius: 1.6rem;
+  --text: #efeaea;
+  --muted: #968f8f;
+  --surface: #222226;
+  --surface-hover: #2c2c31;
+  --border: rgba(255, 255, 255, 0.09);
+  --danger: #ff6b6b;
+  --x-ui: #e6e2e2;  --on-x: #141416;
+  --o-ui: #cf2430;  --on-o: #fff5f5;
+  --tie-ui: #3a3a40; --on-tie: #ddd8d8;
+  --win: #cf2430;
+  --x-fill: linear-gradient(150deg, #4a4a50, #1e1e21);
+  --o-fill: linear-gradient(150deg, #e0363f, #8a1017);
+  --piece-shadow: drop-shadow(0 4px 3px rgba(0, 0, 0, 0.75));
+  --x-thick: 0.27; --x-cap: 0.22rem; --o-ring: 0.21;
+  --board-bg: #161619;
+  --board-edge: inset 0 0 0 2px #2d2d33, 0 16px 28px rgba(0, 0, 0, 0.6);
+  --board-pad: 0.8rem; --board-gap: 0.55rem; --board-radius: 0.7rem;
+  --cell-bg: #0e0e10;
+  --cell-shadow: inset 0 5px 9px rgba(0, 0, 0, 0.85), inset 0 -1px 0 rgba(255, 255, 255, 0.05);
+  --cell-radius: 0.4rem;
+  --tray-bg: rgba(0, 0, 0, 0.35);
+}

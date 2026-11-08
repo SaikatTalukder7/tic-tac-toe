@@ -1,0 +1,67 @@
+/* POP: flat purple, cyan X, pink O */
+.app[data-theme='pop'] {
+  --page:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px) 0 0 / 28px 28px,
+    #8e9bff;
+  --card: #262a5e;
+  --card-border: transparent;
+  --card-shadow: 0 10px 0 #1a1d47, 0 28px 40px rgba(26, 29, 71, 0.35);
+  --card-radius: 1.8rem;
+  --text: #f4f5ff;
+  --muted: #aab1ff;
+  --surface: #3a4086;
+  --surface-hover: #4950a0;
+  --border: rgba(255, 255, 255, 0.1);
+  --danger: #ff8fa3;
+  --x-ui: #7fe8f2;  --on-x: #14204f;
+  --o-ui: #ffa6e1;  --on-o: #40184f;
+  --tie-ui: #ffd9a0; --on-tie: #4a3320;
+  --win: #fff59d;
+  --x-fill: #7fe8f2;
+  --o-fill: #ffa6e1;
+  --piece-shadow: none;
+  --x-thick: 0.22; --x-cap: 999px; --o-ring: 0.16;
+  --board-bg: transparent;
+  --board-edge: none;
+  --board-pad: 0; --board-gap: 0.6rem; --board-radius: 0;
+  --cell-bg: #3a4086;
+  --cell-shadow: 0 5px 0 #2a2f6b;
+  --cell-radius: 0.9rem;
+  --tray-bg: rgba(255, 255, 255, 0.07);
+}
+
+.app[data-theme='pop'] h1 { text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* faint numbers 1-9 in the empty cells */
+.app[data-theme='pop'] .cell .num {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.14);
+  pointer-events: none;
+}
+
+/* "YOUR TURN" bar with a spinning dot */
+.app[data-theme='pop'] .status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: var(--surface);
+  border-radius: 0.9rem;
+  box-shadow: 0 4px 0 #2a2f6b;
+}
+.app[data-theme='pop'] .status::before {
+  content: '';
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 2px solid var(--x-ui);
+  border-right-color: transparent;
+  animation: spin 1s linear infinite;
+}
