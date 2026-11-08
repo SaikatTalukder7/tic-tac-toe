@@ -1,23 +1,26 @@
 # X O Tic Tac Toe
 
-A modern Tic Tac Toe game built with React and Vite, featuring three unique board themes and three different ways to play.
+### 🎮 Challenge Yourself. Play with Friends.
 
+A modern Tic Tac Toe game built with React and Vite, featuring three unique board themes and three different ways to play.
 Play against the computer, challenge a friend on the same device, or invite someone online using a shareable game link.
 
-## Game Preview
+## 🎮 Game Preview
 
 <p align="center">
   <img src="screenshots/home.png" width="49%" alt="Home Screen" />
   <img src="screenshots/gameplay.png" width="49%" alt="Gameplay Screen" />
 </p>
 
+<h2 align="center">🎮 Play X O Tic Tac Toe</h2>
+
 <p align="center">
   <a href="https://tictactoesaikat.vercel.app/">
-    <strong>Live Demo</strong>
+    <strong>🚀 PLAY NOW</strong>
   </a>
 </p>
 
-## Features
+## ✨ Features
 
 - Three game modes: Play vs Computer, 2 Players, and Play with Friend.
 - Three visual themes: Noir, Wooden, and Pop.
@@ -31,7 +34,7 @@ Play against the computer, challenge a friend on the same device, or invite some
 - Responsive design with an iPhone-inspired interface.
 - No account or sign-up required.
 
-## Game Modes
+## 🎯 Game Modes
 
 | Mode | Description |
 |---|---|
@@ -40,7 +43,7 @@ Play against the computer, challenge a friend on the same device, or invite some
 | Play with Friend | Invite a friend and play online using a game link. |
 | Join via Link | Join an existing online match using an invite link or game code. |
 
-## Board Themes
+## 🎨 Board Themes
 
 | Theme | Description |
 |---|---|
@@ -50,7 +53,7 @@ Play against the computer, challenge a friend on the same device, or invite some
 
 Players can select their preferred board theme from the home screen.
 
-## How to Play
+## 📖 How to Play
 
 1. Select a board theme and game mode.
 2. Enter your player name.
@@ -65,7 +68,7 @@ Players can select their preferred board theme from the home screen.
 - O starts with 4 pieces.
 - Remaining pieces are displayed beside the board.
 
-## Online Multiplayer
+## 🌐 Online Multiplayer
 
 The Play with Friend mode allows two players to play together over the internet.
 
@@ -83,7 +86,7 @@ The Play with Friend mode allows two players to play together over the internet.
 - The host should keep the game tab open during the match.
 - Network restrictions may affect peer-to-peer connections.
 
-## Run Locally
+## 💻 Run Locally
 
 You can run this project on your computer using Node.js and npm.
 
@@ -145,7 +148,7 @@ npm run preview
 
 The generated production files will be available inside the `dist` directory.
 
-## Deployment
+## 🚀 Deployment
 
 This project is deployed using Vercel.
 
@@ -160,7 +163,7 @@ To deploy your own copy:
 
 No environment variables are required for the current configuration.
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
 tic-tac-toe/
@@ -210,10 +213,9 @@ tic-tac-toe/
             |-- noir.css
             |-- wood.css
             `-- pop.css
-
 ```
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 - **React 18** - User interface development.
 - **Vite** - Development server and build tool.
@@ -223,6 +225,6 @@ tic-tac-toe/
 - **WebRTC** - Real-time communication between players.
 - **Vercel** - Deployment and hosting.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
